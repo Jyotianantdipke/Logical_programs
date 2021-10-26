@@ -1,11 +1,7 @@
 #armstrong 
-n=int(input('Enter number'))
-m=n
-p=len(str(n))
-ans=0
-while n>0:
-   mod=n%10
-   ans=ans+mod**p
-   n=n//10
-print('Armstrong' if m==ans else 'Not Armstrong')  
-
+n=int(input("Enter Number: "))
+sum1=0
+m=len(str(n))
+for i in str(n):
+    sum1+=int(i)**m
+print("Armstrong" if sum1==n else "Not")
